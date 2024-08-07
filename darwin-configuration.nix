@@ -4,14 +4,20 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
-    neovim
-    git
-    openssh
-    chezmoi
+    ## Core Utilities
     coreutils
-    alacritty
+    openssh
+    git
     curl
     wget
+
+    # CLI
+    neovim
+    chezmoi
+
+    # Desktop applications
+    alacritty   # Terminal
+    supersonic  # Navidrome-compatible music player
   ];
 
   environment.shells = with pkgs; [
