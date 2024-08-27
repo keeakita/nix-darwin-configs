@@ -6,18 +6,30 @@
   environment.systemPackages = with pkgs; [
     ## Core Utilities
     coreutils
+    util-linux  # for rename
+    findutils
     openssh
     git
     curl
     wget
+    parallel
+    unzip
+    silver-searcher
+    gnused
+    unixtools.watch
+
+    # Languages
+    rustup
 
     # CLI
     neovim
     chezmoi
 
+    # For music management
+    flac
+
     # Desktop applications
     alacritty   # Terminal
-    supersonic  # Navidrome-compatible music player
   ];
 
   environment.shells = with pkgs; [
