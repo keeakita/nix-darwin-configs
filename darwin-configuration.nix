@@ -17,6 +17,10 @@
     silver-searcher
     gnused
     unixtools.watch
+    gnumake
+    gh  # GitHub CLI
+    jq
+    tmux
 
     # Languages
     rustup
@@ -24,12 +28,18 @@
     # CLI
     neovim
     chezmoi
+    ranger
 
     # For music management
     flac
 
     # Desktop applications
     alacritty   # Terminal
+  ];
+
+  # Fonts
+  fonts.packages = with pkgs; [
+    fira-code
   ];
 
   environment.shells = with pkgs; [
