@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     nodejs_22  # For getsentry/craft
-    rye        # For getsentry/opsbot
+    uv         # For getsentry/opsbot
+    jsonnet    # For getsentry/ops
   ];
 }
