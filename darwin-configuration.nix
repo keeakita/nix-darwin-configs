@@ -27,6 +27,7 @@
     gh  # GitHub CLI
     jq
     tmux
+    fzf
 
     # Languages
     rustup
@@ -34,6 +35,7 @@
     # CLI
     neovim
     chezmoi
+    haskellPackages.pdftotext # for ranger previews
     ranger
 
     # For music management
